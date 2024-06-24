@@ -32,7 +32,7 @@ body {
 
 .imageContainer {
   flex-grow: 3;
-  background-image: url("./3d-rendering-kid-playing-online_23-2150898633.jpg");
+  background-image: url("./childernImage.jpg");
   background-position: center center;
   background-size: cover;
 }
