@@ -4,7 +4,7 @@
 body {
   font-family: "cairo", sans-serif;
 }
-.Auth_App {
+.simple_Validation_Container {
   width: 90vw;
   height: 90vh;
   display: flex;
@@ -14,56 +14,59 @@ body {
   overflow-y: scroll;
 }
 @media (min-width: 768px) {
-  .Auth_App {
+  .simple_Validation_Container {
     width: 750px;
     overflow: auto;
   }
 }
 @media (min-width: 992px) {
-  .Auth_App {
+  .simple_Validation_Container {
     width: 970px;
   }
 }
 @media (min-width: 1200px) {
-  .Auth_App {
+  .simple_Validation_Container {
     width: 1170px;
   }
 }
-.box-image {
+
+.imageContainer {
   flex-grow: 3;
   background-image: url("./3d-rendering-kid-playing-online_23-2150898633.jpg");
   background-position: center center;
   background-size: cover;
 }
 @media (max-width: 768px) {
-  .box-image {
+  .imageContainer {
     display: none;
   }
-  .email-box,
-  .password-box {
+  .emailContainer,
+  .passwordContainer {
     width: 80vw;
   }
-  .form {
+  .subFormContainer {
     width: 80vw !important;
   }
-  .Auth_App {
+  .simple_Validation_Container {
     overflow: hidden;
   }
 }
-.box-form {
+
+.FormContainer {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 20px;
 }
-.box-form .logo {
+.FormContainer .logoContainer {
   margin-top: 20px;
 }
-.box-form .logo img {
+.FormContainer .logoContainer img {
   width: 70px;
 }
-.Auth_App .box-form .header h3 {
+
+.simple_Validation_Container .FormContainer .headerContainer h3 {
   font-weight: bold;
   font-family: monospace;
   letter-spacing: 1.9px;
@@ -72,7 +75,7 @@ body {
   margin-top: -5px;
 }
 
-.form {
+.subFormContainer {
   width: 30vw;
   margin-top: 20px;
   display: flex;
@@ -81,21 +84,21 @@ body {
   flex: 1;
   border-radius: 15px;
 }
-.email-box,
-.password-box {
+.emailContainer,
+.passwordContainer {
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
 }
-.email-box label,
-.password-box label {
+.emailContainer label,
+.passwordContainer label {
   margin-bottom: 6px;
   color: #817d7d;
   font-weight: bold;
 }
 
-.email-box input,
-.password-box input {
+.emailContainer input,
+.passwordContainer input {
   padding: 8px;
   border: none;
   outline: none;
@@ -105,18 +108,16 @@ body {
   font-family: monospace;
   font-size: 15px;
 }
-.email-box input:focus,
-.password-box input:focus {
+.emailContainer input:focus,
+.passwordContainer input:focus {
   box-shadow: 0 0 10px 1px darkblue;
 }
-.email-box input::placeholder,
-.password-box input::placeholder {
-}
-.logIn_div {
+
+.logInButton_Container {
   display: flex;
   justify-content: center;
 }
-.logIn_btn {
+.logIn_Button {
   background-color: slateblue;
   width: 100%;
   margin-top: 20px;
