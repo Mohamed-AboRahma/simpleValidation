@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "cairo", sans-serif;
+}
+.Auth_App {
+  width: 90vw;
+  height: 90vh;
+  display: flex;
+  box-shadow: 0 0 5px 5px #ddd;
+  margin: 30px auto 0;
+  border-radius: 15px;
+  overflow-y: scroll;
+}
+@media (min-width: 768px) {
+  .Auth_App {
+    width: 750px;
+    overflow: auto;
+  }
+}
+@media (min-width: 992px) {
+  .Auth_App {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .Auth_App {
+    width: 1170px;
+  }
+}
+.box-image {
+  flex-grow: 3;
+  background-image: url("./3d-rendering-kid-playing-online_23-2150898633.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+@media (max-width: 768px) {
+  .box-image {
+    display: none;
+  }
+  .email-box,
+  .password-box {
+    width: 80vw;
+  }
+  .form {
+    width: 80vw !important;
+  }
+  .Auth_App {
+    overflow: hidden;
+  }
+}
+.box-form {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+.box-form .logo {
+  margin-top: 20px;
+}
+.box-form .logo img {
+  width: 70px;
+}
+.Auth_App .box-form .header h3 {
+  font-weight: bold;
+  font-family: monospace;
+  letter-spacing: 1.9px;
+  text-transform: capitalize;
+  color: rgb(128, 3, 245);
+  margin-top: -5px;
+}
+
+.form {
+  width: 30vw;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex: 1;
+  border-radius: 15px;
+}
+.email-box,
+.password-box {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.email-box label,
+.password-box label {
+  margin-bottom: 6px;
+  color: #817d7d;
+  font-weight: bold;
+}
+
+.email-box input,
+.password-box input {
+  padding: 8px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px darkblue;
+  transition: box-shadow 0.3s ease-in-out;
+  font-family: monospace;
+  font-size: 15px;
+}
+.email-box input:focus,
+.password-box input:focus {
+  box-shadow: 0 0 10px 1px darkblue;
+}
+.email-box input::placeholder,
+.password-box input::placeholder {
+}
+.logIn_div {
+  display: flex;
+  justify-content: center;
+}
+.logIn_btn {
+  background-color: slateblue;
+  width: 100%;
+  margin-top: 20px;
+  outline: none;
+  padding: 13px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 5px blueviolet;
+  color: wheat;
+  font-size: 17px;
+  font-weight: bold;
+  font-variant: all-petite-caps;
+}
